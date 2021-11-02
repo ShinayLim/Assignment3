@@ -1,3 +1,8 @@
+#This will show the shop's name
+def myprint(): 
+   print("Welcome to Fruity Shop!")
+myprint()
+
 name = str (input("Good day! Please enter your nickname: "))
 # this will greet the person's name
 def greet(name):
