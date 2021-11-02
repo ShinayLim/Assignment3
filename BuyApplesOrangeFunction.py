@@ -31,10 +31,24 @@ def totalAmountOfApplesOranges():
     return totalAmount
 
 def totalPurchase():
-    print(f"The total amount of your purchase is {totalAmount}")
-
+    print(f"The total amount is {totalAmount}")
 
 costOfApple = askForNumberOfApple()
 costOfOrange = askForNumberOfOrange()
 totalAmount = totalAmountOfApplesOranges()
 totalPurchase()
+
+# this will ask the person if he or she will continue the purchase
+def askYesNoQuestion(question):
+  YesNoAnswer = input(question).upper()
+  if YesNoAnswer == "YES" or YesNoAnswer == "NO":
+     return YesNoAnswer  
+  else:
+     return askYesNoQuestion(question)
+ 
+answer = askYesNoQuestion("Do you want to continue your transaction? (Yes or No) ")
+if answer == "YES":
+    print("The parcel is on your way. Thank you and come again!")
+elif answer == "NO":
+    print("Thank you for your time please come again!")
+
