@@ -21,6 +21,11 @@ def getName():
     nameFunc = input("Enter your full name: ")
     return nameFunc
 
+def getAge():
+    ageFunc = input("How old are you? ")
+    return ageFunc
+
 def getAddress():
-    addFunc = input("Address: ")
+    addFunc = input("Where do you live? ")
     return addFunc
+
