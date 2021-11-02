@@ -8,3 +8,4 @@ name = str (input("Good day! Please enter your nickname: "))
 def greet(name):
     print ("Good day "+ str(name), "! Please enjoy your shopping.")
 greet(name)
+
