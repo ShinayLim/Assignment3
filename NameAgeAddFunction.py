@@ -17,3 +17,10 @@ if answer == "YES":
 elif answer == "NO":
     print("We understand your provacy concerns.Thank you.")
 
+def getName():
+    nameFunc = input("Enter your full name: ")
+    return nameFunc
+
+def getAddress():
+    addFunc = input("Address: ")
+    return addFunc
