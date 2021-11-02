@@ -11,12 +11,15 @@ def askYesNoQuestion(question):
      return YesNoAnswer  
   else:
      return askYesNoQuestion(question)
- 
+
+import sys
+
 answer = askYesNoQuestion("Are we allowed to gather personal information from you? (Yes or No) ")
 if answer == "YES":
   print("We highly appreciate that. We may now proceed.")
 elif answer == "NO":
     print("We understand your privacy concerns.Thank you.")
+    sys.exit()
     
 #gathering of the personal details...
 def getName():
