@@ -26,5 +26,15 @@ def askForNumberOfOrange():
     costOfOrange = int(orangesYouWantToBuy) * orangePrice
     return costOfOrange
 
+def totalAmountOfApplesOranges():
+    totalAmount = costOfApple + costOfOrange
+    return totalAmount
+
+def totalPurchase():
+    print(f"The total amount of your purchase is {totalAmount}")
+
+
 costOfApple = askForNumberOfApple()
 costOfOrange = askForNumberOfOrange()
+totalAmount = totalAmountOfApplesOranges()
+totalPurchase()
