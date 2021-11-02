@@ -21,4 +21,10 @@ def askForNumberOfApple():
     costOfApple = int(applesYouWantToBuy) * applePrice
     return costOfApple
 
+def askForNumberOfOrange():
+    orangesYouWantToBuy = input("How many orange/s you want to add in your cart?: ")
+    costOfOrange = int(orangesYouWantToBuy) * orangePrice
+    return costOfOrange
+
 costOfApple = askForNumberOfApple()
+costOfOrange = askForNumberOfOrange()
