@@ -1,13 +1,11 @@
 #This will show the shop's name
 def myprint(): 
    print("Welcome to Fruity Shop!")
-myprint()
 
-name = str (input("Good day! Please enter your nickname: "))
 # this will greet the person's name
-def greet(name):
+def greet():
+    name = str (input("Good day! Please enter your nickname: "))
     print ("Good day "+ str(name), "! Please enjoy your shopping.")
-greet(name)
 
 def askForMoneyYouHave():
     money = input("How much money do you have on hand?: ")
@@ -30,6 +28,8 @@ def yourChange():
 def displayOutput():
     print(f"You can buy {numOfApple} apples and your change is {change} pesos.")
 
+myprint()
+greet()
 customersMoney = askForMoneyYouHave()
 applePrice = askForPriceOfApple()
 numOfApple = numberOfApplesYouCanBuy()
