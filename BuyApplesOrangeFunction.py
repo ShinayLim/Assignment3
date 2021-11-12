@@ -5,15 +5,15 @@ def greet():
     name = str (input("Good day! Please enter your nickname: "))
     print ("Good day "+ str(name), "! Please enjoy your shopping.")
 
-applePrice = 20
-orangePrice = 25
 
 def askForNumberOfApple():
+    applePrice = 20
     applesYouWantToBuy = input("How many apple/s you want to add in your cart?: ")
     costOfApple = int(applesYouWantToBuy) * applePrice
     return costOfApple
 
 def askForNumberOfOrange():
+    orangePrice = 25
     orangesYouWantToBuy = input("How many orange/s you want to add in your cart?: ")
     costOfOrange = int(orangesYouWantToBuy) * orangePrice
     return costOfOrange
